@@ -1,0 +1,50 @@
+@font-face {
+  font-family: 'behindfont';
+  font-weight: bold; /* Define the bold version */
+  src: url('../DG-Gaded-Bold.ttf') format('truetype')
+}
+
+#behind-title{
+    font-family: "behindfont", sans-serif !important;
+    font-size: 80px !important;
+    @media (max-width:770px) {
+        font-size: 50px !important;
+    }
+    @media (max-width:460px) {
+        font-size: 30px !important;
+    }
+}
+.special-heading-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.special-heading {
+    flex: 0 0 auto;
+}
+
+.speakers-grid{
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)) !important;
+}
+.speakers_page .speakers_section .special-heading-container {
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.speakers-slider {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.special-heading-container .slick-prev, .special-heading-container .slick-next {
+    top: auto;
+    transform: none;
+}
+
+
+.speakers-container {
+    min-width: 100vw;
+    translate: -55%;
+}
